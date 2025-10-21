@@ -1,0 +1,96 @@
+set $mod Mod4
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+
+bindsym $mod+Shift+d exec flameshot gui
+bindsym $mod+o exec alacritty
+bindsym $mod+comma kill
+bindsym $mod+g exec --no-startup-id dmenu_run
+bindsym $mod+y exec firefox
+bindsym $mod+eacute exec dolphin
+bindsym $mod+t exec emacsclient -c
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+b focus left
+bindsym $mod+p focus down
+bindsym $mod+n focus up
+bindsym $mod+f focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+b move left
+bindsym $mod+Shift+n move down
+bindsym $mod+Shift+p move up
+bindsym $mod+Shift+f move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+m split h
+bindsym $mod+v split v
+bindsym $mod+e fullscreen toggle
+bindsym $mod+a layout stacking
+bindsym $mod+apostrophe layout tabbed
+# bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+# Define names for default workspaces for which we configure key bindings later on.
+bindsym $mod+equal workspace number $ws1
+bindsym $mod+slash workspace number $ws2
+bindsym $mod+minus workspace number $ws3
+bindsym $mod+egrave workspace number $ws4
+bindsym $mod+backslash workspace number $ws5
+bindsym $mod+dead_circumflex workspace number $ws6
+bindsym $mod+parenleft workspace number $ws7
+bindsym $mod+dead_grave workspace number $ws8
+bindsym $mod+parenright workspace number $ws9
+bindsym $mod+quotedbl workspace number $ws10
+bindsym $mod+Shift+equal move container to workspace number $ws1
+bindsym $mod+Shift+slash move container to workspace number $ws2
+bindsym $mod+Shift+minus move container to workspace number $ws3
+bindsym $mod+Shift+egrave move container to workspace number $ws4
+bindsym $mod+Shift+backslash move container to workspace number $ws5
+bindsym $mod+Shift+dead_circumflex move container to workspace number $ws6
+bindsym $mod+Shift+parenleft move container to workspace number $ws7
+bindsym $mod+Shift+dead_grave move container to workspace number $ws8
+bindsym $mod+Shift+parenright move container to workspace number $ws9
+bindsym $mod+Shift+quotedbl move container to workspace number $ws10
+bindsym $mod+Shift+comma reload
+# bindsym $mod+Shift+r restart
+bindsym $mod+Shift+eacute exec i3 exit
+
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym f resize shrink width 5 px or 5 ppt
+        bindsym p resize grow height 5 px or 5 ppt
+        bindsym n resize shrink height 5 px or 5 ppt
+        bindsym b resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+Shift+r mode "resize"

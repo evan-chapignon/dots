@@ -1,0 +1,8 @@
+#preload = ~/Pictures/dezoomify-result.jpg
+preload = ~/.config/hypr/mcn.jpg
+preload = ~/Downloads/kirby.jpg
+preload = ~/Downloads/Pixei.jpg
+# wallpaper = eDP-1, ~/.config/hypr/mcn.jpg
+wallpaper = eDP-1, ~/Downloads/kirby.jpg
+wallpaper = HDMI-A-1, ~/Pictures/dezoomify-result.jpg
+

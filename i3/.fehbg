@@ -1,0 +1,2 @@
+!#/bin/sh
+feh --no-fehbg --bg-center '~/Pictures/gentoo.jpg' '~/Pictures/gentoo.jpg'
