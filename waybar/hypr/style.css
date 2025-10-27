@@ -14,11 +14,11 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  border: 2px solid #e4d5ae;
+  border: 2px solid #b4bcc4;
   background: transparent;
   background: alpha(transparent, 0.7);
   color: lighter(@active);
-  background-color:#242424
+  background-color:#ffffff
 }
 
 menu,
@@ -50,7 +50,7 @@ tooltip label {
   margin : 2px 2px;
   border-radius: 4px;
   background: alpha(transparent, 0.4);
-  color: lighter(@active);
+  color: #b4bcc4;
 }
 
 .modules-left {
@@ -59,7 +59,6 @@ tooltip label {
   margin: 2px 2px;
   border-radius: 4px;
   background: alpha(transparent, 0.4);
-  color: lighter(@active);
 }
 
 #gcpu,
@@ -127,21 +126,20 @@ tooltip label {
 }
 
 #workspaces button {
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  color: #ebddb2;
+  /* transition-property: background-color; */
+  /* transition-duration: 0.5s; */
+  color: #b4bcc4;
   background: transparent;
-  color: alpha(#ebddb2, 0.3);
+  color: alpha(#b4bcc4, 0.3);
 }
 
 #workspaces button.urgent {
   font-weight: bold;
-  color: #ebddb2;
+  color: #b4bcc4;
 }
 
-#hworkspaces button.focused {
-  background-color: #ffffff;
-  color: #ffffff;
+#workspaces button.active {
+  color: #b4bcc4;
 }
 
 #network.wifi {
@@ -192,7 +190,7 @@ tooltip label {
 #pulseaudio.mic {
   border-radius: 4px;
   color: transparent;
-  background: alpha(darker(#ebddb2), 0.6);
+  background: alpha(darker(#b4bcc4), 0.6);
   padding-left: 4px;
 }
 
@@ -231,20 +229,20 @@ tooltip label {
 @keyframes blink-active {
   to {
     background-color: @active;
-    color: #ebddb2;
+    color: #b4bcc4;
   }
 }
 
 @keyframes blink-red {
   to {
     background-color: #c64d4f;
-    color: #ebddb2;
+    color: #b4bcc4;
   }
 }
 
 @keyframes blink-yellow {
   to {
     background-color: #cf9022;
-    color: #ebddb2;
+    color: #b4bcc4;
   }
 }

@@ -15,7 +15,7 @@ bindsym $mod+Shift+d exec flameshot gui
 bindsym $mod+o exec alacritty
 bindsym $mod+comma kill
 bindsym $mod+g exec --no-startup-id dmenu_run
-bindsym $mod+y exec firefox-bin
+bindsym $mod+y exec firefox
 # bindsym $mod+eacute exec dolphin
 bindsym $mod+t exec emacsclient -c
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"

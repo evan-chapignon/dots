@@ -36,6 +36,7 @@ exec-once = waybar # -c ~/.config/waybar/hypr/config -s .config/waybar/hypr/styl
 exec-once = hyprpaper
 exec-once = bluetoothctl trust 84:D3:52:C5:B5:2C & bluetoothctl power on & bluetoothctl connect 84:D3:52:C5:B5:2C
 
+exec-once = kanata -c ~/.config/kanata/kanata.kbd
 #############################
 ### ENVIRONMENT VARIABLES ###
 #############################
@@ -60,7 +61,7 @@ general {
     border_size = 2
 
     # https:/wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-    col.active_border = rgba(e4d5aeea) 
+    col.active_border = rgba(b4bcc4ea) 
 #rgba(00ff99ee) 45deg
     col.inactive_border = rgba(83a598aa)
 
@@ -78,8 +79,8 @@ decoration {
     rounding = 0
 
     # Change transparency of focused and unfocused windows
-    active_opacity = 0.95
-    inactive_opacity = 0.90
+    active_opacity = 1.0
+    inactive_opacity = 1.0
 
     shadow {
         enabled = false
@@ -100,7 +101,7 @@ decoration {
 
 # https://wiki.hyprland.org/Configuring/Variables/#animations
 animations {
-    enabled = no
+    enabled = yes
 
     # Default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
@@ -161,7 +162,6 @@ misc {
 #############
 
 # https://wiki.hyprland.org/Configuring/Variables/#input
-
 input {
     kb_layout =fr
     kb_variant =dvorak
@@ -205,7 +205,7 @@ bind = $mainMod SHIFT, A, exit,
 bind = $mainMod, eacute, exec, $fileManager
 bind = $mainMod, i, togglefloating,
 bind = $mainMod, R, exec, $menu
-bind = $mainMod, P, pseudo, # dwindle
+bind = $mainMod, K, pseudo, # dwindle
 bind = $mainMod, space, togglesplit, # dwindle
 bind = $mainMod, W, exec, remmina -c ~/.local/share/remmina/rdp-windou_rdp_windaxel_83-136-208-192.remmina
 # Move focus with mainMod + arrow keys
@@ -291,5 +291,7 @@ windowrulev2 = suppressevent maximize, class:.*
 # Fix some dragging issues with XWayland
 windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
 
-
-
+windowrulev2 = float, class:^(emacs)$
+windowrulev2 = size 800x1200, class:^(emacs)$
+bind = , Print, exec, playerctl play-pause
+bind = SUPER, E, fullscreen

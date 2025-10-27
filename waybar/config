@@ -5,9 +5,9 @@
   "reload_style_on_change": true,
   "width": 40,
   "modules-left": [
-    "hyprland/workspaces",
+    "sway/workspaces",
   ],
-  "hyprland/workspaces": {
+  "sway/workspaces": {
     "format": "•",
     "on-click": "activate",
     "all-outputs": true,

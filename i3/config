@@ -11,7 +11,7 @@ for_window [class="^.*"] border pixel 2
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 &
 exec --no-startup-id polybar
 #exec --no-startup-id feh --bg-scale ~/Pictures/gybegruvbox.png
-exec xrandr --output HDMI-1 --primary --auto --pos 0x0 --output eDP-1 --auto --right-of HDMI-1
+
 exec --no-startup-id kanata -c ~/.config/kanata/kanata.kbd
 #workspace 1 output HDMI-A-1
 #workspace 2 output eDP-1
