@@ -1,8 +1,8 @@
 [colors]
-bg = #000000
+bg = #1E1E2E
 bg-alt = #181825
 bg-darker = #1d2021
-fg = #FFFFFF
+fg = #cdd6f4
 
 blue = #83a598
 cyan = #8ec07c
@@ -106,8 +106,8 @@ tray-spacing = 16pt
 type = internal/xworkspaces
 
 label-active = %name%
-label-active-background = ${colors.fg}
-label-active-foreground = ${colors.bg}
+label-active-background = ${colors.red}
+label-active-foreground = ${colors.yellow}
 label-active-underline= ${colors.blue}
 label-active-padding = 1
 
@@ -225,7 +225,7 @@ date = %H:%M
 date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
-label-foreground = ${colors.fg}
+label-foreground = ${colors.primary}
 
 [settings]
 screenchange-reload = true

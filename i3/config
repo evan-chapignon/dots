@@ -11,7 +11,7 @@ for_window [class="^.*"] border pixel 2
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1 &
 exec --no-startup-id polybar
 #exec --no-startup-id feh --bg-scale ~/Pictures/gybegruvbox.png
-exec xrandr --output HDMI-1 --primary --auto --pos 0x0 --output eDP-1 --auto --right-of HDMI-1
+
 exec --no-startup-id kanata -c ~/.config/kanata/kanata.kbd
 #workspace 1 output HDMI-A-1
 #workspace 2 output eDP-1
@@ -66,8 +66,8 @@ set $base0F #fcc09e
 
     # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #404040 #f38ba8 #282828 #282828
-    client.unfocused        #1d2021 #11111b #1d2021 #1d2021
+    client.focused          #2E3440 #D8DEE9 #2E3440 #D8DEE9
+    client.unfocused        #D8DEE9 #2E3440 #D8DEE9 #2E3440
     client.focused_inactive #282828 #282828 #888888 #282828
     client.placeholder      #282828 #282828 #888888 #828282
     client.urgent           #900000 #900000 #ffffff #900000
@@ -76,9 +76,9 @@ set $base0F #fcc09e
 
 hide_edge_borders smart
 smart_borders on
-smart_gaps on
+# smart_gaps on
 
 include rcc
 
-gaps inner 10
-gaps outer 10
+gaps inner 8
+gaps outer 0

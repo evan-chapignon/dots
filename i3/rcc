@@ -18,6 +18,7 @@ bindsym $mod+g exec --no-startup-id dmenu_run
 bindsym $mod+y exec firefox-bin
 # bindsym $mod+eacute exec dolphin
 bindsym $mod+t exec emacsclient -c
+
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+b focus left
