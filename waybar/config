@@ -5,14 +5,15 @@
   "reload_style_on_change": true,
   "width": 40,
   "modules-left": [
-    "sway/workspaces",
+    "hyprland/workspaces",
   ],
-  "sway/workspaces": {
+  "hyprland/workspaces": {
     "format": "•",
     "on-click": "activate",
     "all-outputs": true,
   },
    "modules-right": [
+    "hyprland/language",
     "custom/recorder",
     "privacy",
     "group/brightness",
@@ -48,6 +49,15 @@
       "custom/github"
     ]
   },
+
+"hyprland/language": {
+        "format": "{}",
+        "format-en": "en",
+        "format-fr": "fr",
+        "format-fr-dvorak": "dv",
+     },
+
+
   "group/connection": {
     "orientation": "inherit",
     "modules": [
