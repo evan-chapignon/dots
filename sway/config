@@ -267,7 +267,7 @@ gaps inner 5
 
 gaps outer 5
 
-exec waybar
+exec waybar --config ~/.config/waybar/sway/config.json --style ~/.config/waybar/sway/style.css
 exec_always mako
 
 include /etc/sway/config.d/*

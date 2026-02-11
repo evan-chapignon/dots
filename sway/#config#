@@ -1,6 +1,8 @@
 ### Variables
-#X
+
 # XLogo key. Use Mod1 for Alt.
+xwayland enable
+
 set $mod Mod4
 # Home row direction keys, like vim
 set $left b
@@ -9,13 +11,12 @@ set $up p
 set $right f
 # Your preferred terminal emulator
 set $term alacritty 
-set $emacs emacsclient -t
+set $emacs "emacsclient -c"
 # Your preferred application launcher
 set $menu wofi --show drun --config ~/.config/wofi/sway/config --style ~/.config/wofi/sway/style.css
 set $browser firefox
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /home/evan/.config/sway/wppdeathcon.jpg fill
 #
 # Example configuration:
@@ -23,10 +24,10 @@ output * bg /home/evan/.config/sway/wppdeathcon.jpg fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-output HDMI-A-1 pos 0 0
-output eDP-1 pos -1920 0
+output DP-1 pos 0 0
+output HDMI-1 pos 1920 0
 
-for_window [class=".*"] border none
+#for_window [class=".*"] border none
 
 ### Idle configuration
 #
@@ -140,7 +141,6 @@ for_window [class=".*"] border none
 input * {
     xkb_layout fr
     xkb_variant dvorak
-    xkb_options ctrl:swapcaps
 }
 
     # You can "split" the current object of your focus with
@@ -165,6 +165,9 @@ input * {
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+	bindsym $mod+m exec killall -SIGUSR1 waybar
+
 #
 # Scratchpad:
 #
@@ -248,7 +251,7 @@ bindsym $mod+t exec $emacs
 #client.focused $border $bg $fg #ebdbb2 $bg
 #client.focused_inactive #cc241d $bg $fg $bg $bg
 #client.unfocused #cc241d $bg $fg $bg $bg
-p#client.urgent #cc241d #fb4934 $fg $indicator $bg
+#client.urgent #cc241d #fb4934 $fg $indicator $bg
 
 # Définir la bordure par défaut sur 2 pixels
 default_border pixel 2
@@ -259,11 +262,11 @@ client.focused #ebdbb2 #ebdbb2 #ebdbb2 #928374
 # Couleur des bordures des fenêtres inactives
 client.unfocused #181818 #282828 #282828
 
-gaps inner 2
+gaps inner 5
 
-gaps outer 2
+gaps outer 5
 
-exec_always waybar -c ~/.config/waybar/sway/config.json -s ~/.config/waybar/sway/style.css
+exec waybar
 exec_always mako
 
 include /etc/sway/config.d/*
