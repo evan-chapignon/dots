@@ -1,40 +1,40 @@
 [colors.primary]
-background = '#000000' # Le noir profond de Modus Vivendi
-foreground = '#ffffff' # Texte blanc pour un contraste maximal
+background = "#FFFFFF" # nano-color-background
+foreground = "#37474F" # nano-color-foreground
 
 [colors.cursor]
-text = '#000000'
-cursor = '#bd93f9' # Votre couleur de curseur Emacs
+text = "#FFFFFF"
+cursor = "#673AB7" # nano-color-salient
 
 [colors.selection]
-text = '#ffffff'
-background = '#44475a' # Correspond à votre bg-region
+text = "#37474F"
+background = "#EAEAEA" # nano-color-highlight
 
 [colors.normal]
-black =   '#000000'
-red =     '#ff5f5f'
-green =   '#44bc44'
-yellow =  '#d0bc00'
-blue =    '#2fafff'
-magenta = '#bd93f9' # Accentuation violette
-cyan =    '#00d3d0'
-white =   '#bfbfbf'
+black   = "#000000" # nano-color-strong
+red     = "#FF6F00" # nano-color-critical
+green   = "#673AB7" # nano-color-salient (substitut pour un look cohérent)
+yellow  = "#FFAB91" # nano-color-popout
+blue    = "#37474F" # nano-color-foreground
+magenta = "#673AB7" # nano-color-salient
+cyan    = "#B0BEC5" # nano-color-faded
+white   = "#ECEFF1" # nano-color-subtle
 
 [colors.bright]
-black =   '#595959'
-red =     '#ff5f5f'
-green =   '#44bc44'
-yellow =  '#d0bc00'
-blue =    '#79a8ff'
-magenta = '#e3c7fc' # Version claire de votre accent
-cyan =    '#4ae2e2'
-white =   '#ffffff'
+black   = "#B0BEC5" # nano-color-faded
+red     = "#FF6F00"
+green   = "#673AB7"
+yellow  = "#FFAB91"
+blue    = "#37474F"
+magenta = "#673AB7"
+cyan    = "#B0BEC5"
+white   = "#FFFFFF"
 
 [font]
-size = 8.0
+size = 11.0
 
 [font.normal]
-family = "Iosevka"
+family = "Iosevka Nerd Font"
 
 [window]
 opacity = 1.0
