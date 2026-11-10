@@ -4,9 +4,9 @@ xwayland enable
 
 ### Output & Appearance
 # output * bg /home/evan/Pictures/wpp/p5r.jpg fill
-output * bg /home/evan/.config/sway/gris fill
-output DP-1 pos 0 0
-output HDMI-1 pos 3440 0
+output * bg /home/evan/Pictures/wpp/noit.png fill
+# output DP-1 pos 0 0
+# output HDMI-1 pos 3440 0
 
 default_border pixel 2
 gaps inner 5
@@ -15,10 +15,10 @@ gaps outer 5
 # smart_borders on
 
 # class                 border  backgr. text    
-client.focused          #37474F #37474F #FFFFFF 
-client.unfocused        #B0BEC5 #ECEFF1 #37474F 
-client.focused_inactive #ECEFF1 #ECEFF1 #37474F 
-client.urgent           #FF6F00 #FF6F00 #FFFFFF 
+client.focused          #ffffff #ffffff #303030 
+client.unfocused        #303030 #303030 #888888 
+client.focused_inactive #303030 #303030 #888888 
+client.urgent           #888888 #888888 #ffffff
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {
     dwt disabled
@@ -43,7 +43,7 @@ bindsym Print exec grim
 
 ### Autostart
 exec --no-startup-id killall -q notification-daemon; mako
-exec_always waybar --config ~/.config/waybar/sway/config.json --style ~/.config/waybar/sway/style.css
+exec waybar
 include /etc/sway/config.d/*
 include ~/.config/sway/conffr
 # bar {

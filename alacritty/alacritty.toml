@@ -1,34 +1,3 @@
-[colors.primary]
-background = "#FFFFFF" # nano-color-background
-foreground = "#37474F" # nano-color-foreground
-
-[colors.cursor]
-text = "#FFFFFF"
-cursor = "#673AB7" # nano-color-salient
-
-[colors.selection]
-text = "#37474F"
-background = "#EAEAEA" # nano-color-highlight
-
-[colors.normal]
-black   = "#000000" # nano-color-strong
-red     = "#FF6F00" # nano-color-critical
-green   = "#673AB7" # nano-color-salient (substitut pour un look cohérent)
-yellow  = "#FFAB91" # nano-color-popout
-blue    = "#37474F" # nano-color-foreground
-magenta = "#673AB7" # nano-color-salient
-cyan    = "#B0BEC5" # nano-color-faded
-white   = "#ECEFF1" # nano-color-subtle
-
-[colors.bright]
-black   = "#B0BEC5" # nano-color-faded
-red     = "#FF6F00"
-green   = "#673AB7"
-yellow  = "#FFAB91"
-blue    = "#37474F"
-magenta = "#673AB7"
-cyan    = "#B0BEC5"
-white   = "#FFFFFF"
 
 [font]
 size = 11.0
